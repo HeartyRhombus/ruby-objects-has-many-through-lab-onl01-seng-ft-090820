@@ -3,11 +3,10 @@ class Appointment
 
   @@all = []
 
-  def initialize(date)
-    @month = month
+  def initialize(date, patient, doctor)
     @date = date
-    @day_of_week = day_of_week
-    "#{day_of_week}, #{month} #{date}"
+    @patient = patient
+    @doctor = doctor
     @@all << self
   end
 
