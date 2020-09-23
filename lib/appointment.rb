@@ -9,4 +9,10 @@ class Appointment
     "#{day_of_week}, #{date}"
     @@all << self
   end
+
+  def self.all
+    @@all
+  end
+
+
 end
