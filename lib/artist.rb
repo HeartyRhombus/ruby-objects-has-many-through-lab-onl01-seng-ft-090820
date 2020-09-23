@@ -16,4 +16,8 @@ class Artist
     # creates a new song; song should know that it belongs to the artist
   end
 
+  def songs
+    Song.all.select {|song| song.artist == self}
+  end
+
 end
