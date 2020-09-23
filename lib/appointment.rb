@@ -1,12 +1,13 @@
 class Appointment
-  attr_accessor :date, :day_of_week
+  attr_accessor :month, :date, :day_of_week
 
   @@all = []
 
-  def initialize(date, day_of_week)
+  def initialize(month, date, day_of_week)
+    @month = month
     @date = date
     @day_of_week = day_of_week
-    "#{day_of_week}, #{date}"
+    "#{day_of_week}, #{month} #{date}"
     @@all << self
   end
 
